@@ -1,0 +1,116 @@
+---
+layout: default
+title: mySociety work in 2017
+display-title: Work
+description: 
+slug: work
+permalink: /work/
+---
+
+<div class="section">
+  <p class="lead">In 2017 I worked at mySociety three full days a week,
+plus various nap times adding up to another day. Working remotely with
+a small child is a boon for which I am very grateful.
+</div>
+
+<div class="section section--no-top-padding">
+  <div class="stat-container">
+    <div class="stat">
+      <p class="stat__main">
+        <span class="stat__name">Cities visited</span>
+        <span class="stat__number">4</span>
+      </p>
+      <p class="stat__comment">
+        Bristol, Leeds, London, and Oxford.
+      </p>
+    </div>
+
+    <div class="stat">
+      <p class="stat__main">
+        <span class="stat__name">Justified git commits</span>
+        <span class="stat__number">54</span>
+      </p>
+      <p class="stat__comment">
+        Take joy where you can find it!
+        <a href="http://dracos.co.uk/made/justified-commits/">See a full list</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="limit-text">
+  <p>My work this year included
+adding paid subscriptions and spreadsheet data mapping to <a
+href="https://mapit.mysociety.org">MapIt</a>, adding text verification to the
+<a href="http://fixmystreet.org/">FixMyStreet Platform</a>,
+and working closely with Oxfordshire County Council as they use
+<a href="https://www.fixmystreet.com/pro/">FixMyStreet Pro</a> internally
+(including offline support with appcache).
+I’m also quite proud of getting FixMyStreet to 99%
+on <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.fixmystreet.com%2F&tab=mobile">Google Page Speed</a>.
+  </div>
+</div>
+
+<div class="section section--fms-birthday">
+  <div class="row">
+      <div class="column-one-third">
+        <img class="fms-birthday-cake" src="{{ site.baseurl }}/assets/img/icons/cake.png" 
+        srcset="{{ site.baseurl }}/assets/img/cake.svg 1x" width="400" alt="" />
+      </div>
+    <div class="column-two-thirds">
+      <h2>Happy birthday</h2> 
+      <p>FixMyStreet was ten this year, and also made its millionth report. I
+wrote the original version (called Neighbourhood Fix-It for the first few
+months), and I’m pleased that it has lasted this long, and for all that time has
+had a slippy map that works just fine without JavaScript ;)
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="row">
+    <div class="column-two-thirds">
+      <h2>Keeping up to date</h2>
+      <p>One tiny thing I wrote that I quite like was a GitHub commit status webhook, that checks
+whether a pull request contains a changelog entry (and a migration if the schema
+has changed).</p>
+    </div>
+    <div class="column-one-third">
+      <div class="screenshot--framed">
+        <img class="screenshot-test-image" src="{{ site.baseurl }}/assets/img/DGZlNVIW0AUi2ZE.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--better-cities-tweets">
+  <div class="row">
+    <div class="column-one-third">
+	<img src="https://user-images.githubusercontent.com/154364/30906153-d7e429ce-a36e-11e7-8607-ad2a779247b1.gif" alt="">
+    </div>
+    <div class="column-two-thirds">
+<h2>Phone numbers</h2>
+<p>
+One aspect of allowing text verification is we have to deal with phone numbers.
+The UK has it pretty easy – all normal phone numbers start with 0, all mobile
+numbers start 07, and so on.
+The strangest country I found in my work was Argentina, where the international
+mobile number +54 9 11 1234-5678 is the same as the national mobile number 011
+15-1234-5678. Unless you’re texting that number from abroad when you should
+probably drop the “9”…
+
+<p>Google maintain a library, libphonenumber, which codifies every country’s
+handling of telephone numbers as best it can; I assume this is inside Android
+for dealing with the display of phone numbers everywhere. There is a Perl
+library which uses that data for parsing/formatting, Number::Phone, which made
+my job much easier. I submitted a <a href="https://github.com/DrHyde/perl-modules-Number-Phone/pulls">number of pull requests</a> upstream, fixing some
+bugs and adding some new features around the display of national numbers.  </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="page-nav-next">
+    <p class="page-nav-next--message"><span>Next up:</span> <a href="{{ site.baseurl }}/parent/" class="link--nav-next">The harder work of being a parent &#8594;</a></p>
+</div>

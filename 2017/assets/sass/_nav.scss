@@ -6,16 +6,6 @@
 
 .logo {
   display: block;
-  text-indent: -9000px;
-  width: 6em;
-  height: 1.3em;
-  background-color: transparent;
-  background-size: 6em auto;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  @include high-dpi-image("../img/mysociety-logo");
-
   & + small {
     display: block;
   }

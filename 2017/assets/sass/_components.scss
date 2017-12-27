@@ -177,104 +177,6 @@
   white-space: nowrap;
 }
 
-// https://dev.twitter.com/web/embedded-tweets/css
-// overloaded selector to trump default link and paragraph styles
-.twitter-tweet {
-  display: inline-block;
-  text-align: left;
-  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 16px;
-  background-color: #fff;
-  color: #1C2022;
-  border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  margin: 1em auto;
-  max-width: 468px;
-  width: 100%;
-  p {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.4em;
-    margin: 0;
-  }
-
-  a {
-    color: #2B7BB9;
-    font-weight: normal;
-    text-decoration: none;
-    outline: 0 none;
-
-    &:hover,
-    &:focus {
-      color: #3b94d9;
-      text-decoration: underline;
-    }
-  }
-}
-
-// Twitter API sets padding:0 in Firefox, but not Chrome, for some reason,
-// so we look out for rendered tweets and zero the padding ourselves.
-.twitter-tweet-rendered {
-  padding: 0;
-}
-
-.twitter-tweet__author {
-  display: block;
-  padding-left: 45px;
-  position: relative;
-  margin-bottom: 0.85em;
-
-  &,
-  &:hover,
-  &:focus {
-    text-decoration: none !important;
-  }
-}
-
-.twitter-tweet__profile-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-}
-
-.twitter-tweet__name {
-  color: #1C2022;
-  font-weight: bold !important;
-  line-height: 1.2em !important;
-
-  a:hover &,
-  a:focus & {
-    color: #3b94d9;
-  }
-}
-
-.twitter-tweet__screen-name {
-  color: #697882;
-  font-size: 14px !important;
-}
-
-.twitter-tweet__created-at {
-  color: #697882 !important;
-  font-size: 14px !important;
-  line-height: 1.4em;
-  margin-top: 4px;
-  display: inline-block;
-}
-
-.twitter-tweet__verified {
-  display: inline-block;
-  vertical-align: -0.25em;
-  height: 1.25em;
-  width: 1.11111em;
-  background: transparent url(../img/twitter-verified.svg) no-repeat 0 0;
-  background-size: contain;
-}
-
 .sixteen-nine-video-ratio {
   position: relative;
   height: 0;
@@ -405,15 +307,6 @@ html.-ms- .section--inverted .screenshot--framed img {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: $large-screen) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.contents__figures {
-  @media (min-width: $small-screen) {
-    grid-area: 1 / 1 / 2 / 3;
-  }
 }
 
 .contents__item {
@@ -462,23 +355,19 @@ html.-ms- .section--inverted .screenshot--framed img {
 }
 
 .contents__democracy a {
-  background-image: url('../img/contents-demo.jpg');
+  background-image: url('../img/contents-play.jpeg');
 }
 
 .contents__foi a {
-  background-image: url('../img/contents-foi.jpg');
+  background-image: url('../img/contents-rest.jpeg');
 }
 
 .contents__help a {
-  background-image: url('../img/contents-heart.jpg');
+  background-image: url('../img/contents-parent.jpeg');
 }
 
 .contents__cities a {
   background-image: url('../img/contents-cities.jpg');
-}
-
-.contents__figures a {
-  background-image: url('../img/tictec-header.jpg');
 }
 
 .chat-like {

@@ -28,6 +28,9 @@
     clear: both;
   }
 }
+.clearfix {
+	@include clearfix;
+}
 
 $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
 @mixin prefix($property, $value) {

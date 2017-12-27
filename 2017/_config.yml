@@ -1,8 +1,8 @@
 name: annualreport2017
-baseurl:
+baseurl: /2017
 host: 0.0.0.0
 gems: ['jekyll/minibundle']
 title: >
-  mySociety Year in Review 2017
+  Matthew’s Year in Review 2017
 description: >
-  mySociety is a not-for-profit social enterprise that exists to invent and popularise websites and apps that enable citizens around the world to exert power over institutions and decision makers.
+  Matthew is a part-time web developer for mySociety, part-time parent to a two-year old, part-time musician, full-time tired, in Birmingham, UK.

@@ -92,68 +92,6 @@
   }
 }
 
-.section--alltrials {
-  background-color: #E74040;
-  h2 {
-    @media (min-width: $huge-screen) {
-      margin-top: 0.5em;
-    }
-    @media (min-width: 70em) {
-      margin-top: 1.4em;
-    }
-  }
-}
-
-.section--borsetshire {
-  h2 {
-    @media (min-width: $huge-screen) {
-      margin-top: 0.5em;
-    }
-    @media (min-width: 70em) {
-      margin-top: 1.4em;
-    }
-  }
-}
-
-.section--robots {
-  border-top: 1px solid $colour_light_grey;
-  .column-one-third {
-    position: relative;
-    text-align: center;
-  }
-}
-
-.fms-robot {
-  max-height: 400px;
-  @media (min-width: $huge-screen) {
-    position: absolute;
-    top: -120px;
-    left: 0;
-  }
-}
-
-.section--wdtkpro {
-  background-image: linear-gradient(-46deg, #4C888F 0%, #4C888F 9%, #365B74 63%);
-}
-
-.section--stories-from-wdtk {
-  border-top: 1px solid $colour_light_grey;
-  > h3, h2 {
-    text-align: center;
-  }
-  h3 {
-    margin-bottom: 2em;
-  }
-  h2 {
-    margin-bottom: 1.5em;
-  }
-}
-
-.section--opra {
-  background-image: url('../img/opra-background.jpg');
-  @include background-section();
-}
-
 .section--many-requests {
   background-image: url('../img/books-background.jpg');
   @include background-section();
@@ -204,158 +142,19 @@
   }
 }
 
-.section--apis {
-  border-top: 1px solid $colour_light_grey;
-  padding-bottom: 1em;
-  h2 {
-    @media (min-width: $huge-screen) {
-      margin-top: 0.5em;
-    }
-    @media (min-width: 70em) {
-      margin-top: 1em;
-    }
-  }
-  p {
-    max-width: 24em;
-  }
-}
-
-.section--tictec-header {
-  background-image: url('../img/tictec-header.jpg');
-  @include background-section();
-  background-position: top right;
-  @include featured-stat();
-}
-
-.section--tictec-quote {
-  background-color: #f5fbee;
-  a {
-    color: $colour_green;
-  }
-  .blockquote {
-    color: $colour_green;
-  }
-}
-
-.section--tictec-tweets {
-  background-image: url('../img/tictec-background.jpg');
-  @include background-section();
-}
-
-.section--parliament {
-  background-image: url('../img/parliament-background.jpg');
-  @include background-section();
-  background-position: center right;
-  .blockquote {
-    @media (min-width: $large-screen) {
-      font-size: 1.7em;
-    }
-  }
-}
-
 .section--wikidata,
 .section--glow {
   border-top: 1px solid $colour_light_grey;
-}
-
-.wikidata-logo {
-  display: block;
-  margin: 0 auto;
-  @media (min-width: $large-screen) {
-    max-width: 250px;
-  }
 }
 
 .section--iran {
   background-color: #574db0;
 }
 
-.section--youth-outreach {
-  .column-one-third {
-    text-align: center;
-  }
-}
-
-.youth-outreach-badges {
-}
-
-.section--twfy-video {
-  background-color: #87b9d2;
-  text-align: center;
-
-  & > div {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  iframe {
-    box-shadow: 0 0 30px rgba(0,0,0,0.2);
-  }
-}
-
-.section--snap-election {
-  background-image: url('../img/bigben-background.jpg');
-  @include background-section();
-  .limit-text {
-    margin-left: 0;
-  }
-}
-
-.section--research-travel {
-  background: mix($colour_blue, #fff, 15%) url(../img/map.png) 50% 55% no-repeat;
-  background-size: auto 150%;
-  background-image: url(../img/map.svg), none;
-  border-top: 1px solid mix($colour_blue, #fff, 15%);
-}
-
-.section--where-have-you-worked {
-  background-color: $colour_off_white;
-  background-image: url('../img/chatlike-bg.svg');
-  @include section--flush-edged-two-thirds();
-  background-size: 225px;
-  .chat-like {
-    padding: 1.5em;
-    @media (min-width: $large-screen) {
-      padding: 3em;
-    }
-  }
-}
-
-.where-have-you-worked__photo {
-  background-color: $colour_green;
-  background-image: url('../img/where-photo.jpg');
-  @include background-section();
-  min-height: 30em;
-
-}
-
-.section--funders {
-  
-}
-
-.funders-list {
-  margin-bottom: 2em;
-}
-
 .section--share {
   .button + .button {
     margin-left: 1em;
   }
-}
-
-.section--big-love {
-  background-color: $colour_red;
-  background-image: url('../img/heart-stack.png');
-  background-size: 461px 431px;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-}
-
-.big-message-of-love {
-  text-align: center;
-  margin: 0.5em 0 1em;
-  font-size: 2em;
 }
 
 .donation-amounts {
@@ -375,38 +174,6 @@
 
 .pombolas-screenshot {
   margin-bottom: 2em;
-}
-
-.section--donate {
-  @include background-section();
-  background-position: left bottom;
-  background-image: url('../img/donate-bg.jpg');
-}
-
-.donate-call-to-action {
-  text-align: center;
-  max-width: 30em;
-
-  background-color: $colour_red;
-  padding: 1.5em;
-  color: #fff;
-  border-radius: 5px;
-  @media (min-width: $medium-screen) {
-    margin: 2em auto 2em 50%;
-    padding: 2em 3em;
-  }
-}
-
-.button--donate {
-  color: #fff;
-  background-color: darken($colour_red, 20%);
-  
-  &:hover,
-  &:active,
-  &:focus {
-    color: #fff !important;
-    background-color: $colour_black;
-  }
 }
 
 .section--donors {
@@ -447,49 +214,6 @@
   }
 }
 
-.section--loyal-visitors {
-  background-color: $colour_off_white;
-  @include section--flush-edged-two-thirds();
-}
-
-.loyal-visitors--background {
-  background-color: $colour_red;
-  min-height: 20em;
-  @include background-section();
-  background-image: url('../img/loyal-background.jpg');
-}
-
-.loyal-visitors--content {
-  padding: 3em 2em;
-}
-
-.section--sponsor-tictec {
-  background-color: #f5fbee;
-  margin-bottom: 3em;
-  text-align: center;
-  @media (min-width: $huge-screen) {
-    text-align: left;
-  }
-  p {
-    margin-bottom: 0;
-  }
-  .column-one-third {
-    position: relative;
-    text-align: center;
-  }
-}
-
-.sponsor-tictec--image {
-  clip-path: polygon(50% 0,100% 25%,100% 75%,47% 100%,0 75%,0 25%);
-  width: 250px;
-  @media (min-width: $huge-screen) {
-    position: absolute;
-    top: -120px;
-    left: 0;
-    margin: 0;
-  }
-}
-
 .section--2018 {
   background-color: $colour_blue;
   background-image: url('../img/rocket.png');
@@ -502,4 +226,27 @@
     margin-left: 0;
     padding-bottom: 2em;
   }
+}
+
+.section--vienna ol {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+.section--vienna li {
+    position: relative;
+    padding: 0 0 1em 4em;
+}
+.section--vienna p:last-child {
+    margin-bottom: 0;
+}
+.two-columns li {
+    float: left;
+    width: 50%;
+}
+.section--vienna span {
+    position: absolute;
+    top: 0; left: 0;
+    display: block;
+    color: #ccc;
 }
